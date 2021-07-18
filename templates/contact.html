@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Model</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link href="../static/css/animate.css" rel="stylesheet" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Oxygen:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Qwigley"
+    />
+    <!-- Font awesome -->
+    <link
+      href="font-awesome-4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+  </head>
+  <body>
+    <!-- Start wrapper -->
+    <div class="wrapper">
+      <div class="col-md-12">
+        <div class="brand wow fadeIn" data-wow-delay="0.1s">
+          Movie Recommender
+          <div class="title">- Predictor -</div>
+        </div>
+
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav">
+
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+        <!-- End nav -->
+
+        <!-- Start margin -->
+        <div class="margin-contact">
+          <!-- Start left column -->
+          <div class="box-contact col-md-4 col-xs-offset-1">
+            <h3 class="heading-inner">Movie Recommender</h3>
+            <div class="hr"></div>
+            <div id="contact-area">
+              <form action="{{url_for('predict')}}" method="post" class="frm">
+                <input type="text" name="movie" placeholder="movie" required="required" autocomplete="off"/>
+                <div><button type="submit">Predict</button></div>
+
+            </form>
+              <h1> {{prediction_text}}</h1>
+            </div>
+           <hr>
+          </div>
+          <!-- End left column -->
+
+          <!-- Start right image -->
+
+          <div class="col-md-6">
+            <img src="../static/img/6.svg" alt="img" class="photo-contact wid" id="n"/>
+
+          </div>
+          <div class="col-md-6 padd" id="s">
+
+            <img src="../static/img/7.svg" alt="same" class="same-img" />
+            <h4>{{prediction_test}}</h4>
+        </div>
+        <div class="col-md-6 wow fadeIn padd" data-wow-delay="0.1s" id="d">
+
+            <h1>{{prediction_test}}</h1>
+
+        </div>
+
+        </div>
+
+        
+
+
+      </div>
+    </div>
+
+
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <script src="../static/js/app.js"></script>
+
+  
+  </body>
+</html>
