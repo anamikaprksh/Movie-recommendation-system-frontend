@@ -80,6 +80,17 @@ p {
 	margin-bottom: 20px;	
 }
 
+.textfo{
+	font-family: 'STIX Two Math', serif;
+	font-size: 5em;
+	font-weight: 600;
+    color: #ffffff;
+	/* margin-top: 50px; */
+	margin-bottom: 0;
+	text-align: center;
+	line-height: 1.7em;
+	
+}
 
 h1 {
     font-family: 'Qwigley', Helvetica, Sans-serif;	   
@@ -186,6 +197,7 @@ h4 {
 .padd{
 padding-bottom: 10%;
 }
+
 
 /* ----------------------------------------------------
 	 Navigation and logo styles
