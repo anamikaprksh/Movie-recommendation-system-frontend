@@ -5,7 +5,7 @@
 
 
 body {
-	background-color: white;
+	background-color: black;
 	background-image: url(../img/bg.jpg);
 	background-position: left top;
 	background-repeat: repeat;
@@ -24,9 +24,8 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 .wrapper {
-  background: white;
+  background: #314faf;
   margin: 70px auto;
   width: 90%;
   max-width: 1250px;
@@ -37,6 +36,22 @@ a:hover {
   box-sizing: border-box;
 }
 
+.top-head{
+	background: linear-gradient(to left, rgb(253, 255, 117) 50%, rgb(255, 49, 49) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.top-head:hover {
+    background-position: left;
+}
+.top-home{
+	background: linear-gradient(to right, rgb(253, 255, 117) 50%, rgb(255, 49, 49) 50%) left;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.top-home:hover {
+    background-position: right;
+}
 
 img {
 	max-width: 100%;	
@@ -58,8 +73,8 @@ h1 {
     font-family: 'Qwigley', Helvetica, Sans-serif;	   
     font-size: 2.2em;
 	font-weight: 600;
-    color: #4f4d47;
-	margin-top: 50px;
+    color: #ffffff;
+	/* margin-top: 50px; */
 	margin-bottom: 0;
 	text-align: center;
 	line-height: 1.7em;
@@ -107,16 +122,24 @@ h4 {
     font-family: 'Qwigley', Helvetica, Sans-serif;	   
     font-size: 2.2em;
 	font-weight: 600;
-    color: #4f4d47;
+    color: #ffffff;
 	margin-top: 16px;
 	margin-bottom: 0;
 	text-align: center;
 	line-height: 1.7em;
 }
+.pred-button{
+	background: linear-gradient(to left, rgb(253, 255, 117) 50%, rgb(255, 49, 49) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
 
+.pred-button:hover {
+    background-position: left;
+}
 
 .hr {
-	border-bottom: 2px solid #4f4d47;
+	border-bottom: 2px solid #ffffff;
 	display: block;
 	width: 14px;
 	margin: auto;
@@ -206,7 +229,7 @@ padding-bottom: 10%;
     font-family: 'Qwigley', Helvetica, Sans-serif;
 	font-size: 4.1em;
     line-height: normal;
-    color: #4f4d47;
+    color: #ffffff;
     text-transform: capitalize;
 }
 
@@ -234,13 +257,12 @@ padding-bottom: 10%;
 
 .navbar-default {
     border: none;
-    background: #fff;
     margin-top: 7px;
 	padding-bottom: 12px;
 }
 	
 .navbar-default .navbar-nav>li>a {
-	color: #898989;
+	color: #000000;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 1.1em;
     border-top: 1px solid #dddddd;
@@ -248,7 +270,7 @@ padding-bottom: 10%;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	color: #999999;
+	color: #ffffff;
 }
 
 .nav>li>a {
@@ -714,7 +736,13 @@ figure.effect-moses img {
 .cente{
 	text-align: center;
 }
-
+.bord h2{
+	color: white;
+}
+.bord{
+	border: 5px solid gray;
+	margin-bottom: 2%;
+}
 figure.effect-moses h2,
 figure.effect-moses p {
 	padding: 20px;
