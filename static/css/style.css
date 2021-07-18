@@ -134,14 +134,21 @@ h4 {
 	text-align: center;
 	line-height: 1.7em;
 }
+
+.pred-input{
+	font-size: 130%;
+}
+
 .pred-button{
-	background: linear-gradient(to left, rgb(253, 255, 117) 50%, rgb(255, 49, 49) 50%) right;
+	background: linear-gradient(to left, #EEEEEE 50%, #476072 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
+	padding: 1.5% 7%;
 }
 
 .pred-button:hover {
     background-position: left;
+	color: white;
 }
 
 .hr {
