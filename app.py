@@ -5,7 +5,7 @@ import pandas as pd
 
 
 app = Flask(__name__)
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
 import os
 import numpy as np
 import pandas as pd
