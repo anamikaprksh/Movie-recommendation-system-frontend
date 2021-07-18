@@ -171,9 +171,12 @@ def predict():
     a=[]
     for i in j:
         a.append(get_recommendations(i))
-
-
-    return render_template('contact.html', prediction_text = '{}'.format(a))
+    Fin=[]
+    for i in a:
+        Val=i.values
+        Fin.append(Val)
+    # print(a.values)
+    return render_template('contact.html', prediction_text = '{}'.format(Fin))
 
 if __name__ == "__main__":
     app.run(debug=True)
