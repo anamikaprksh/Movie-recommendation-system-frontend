@@ -126,7 +126,7 @@ def home():
 
 @app.route('/contact.html')
 def mod():
-    return render_template('contact.html')
+    return render_template('contact.html',prediction_text="[[]")
 
 @app.route('/index.html')
 def ind():

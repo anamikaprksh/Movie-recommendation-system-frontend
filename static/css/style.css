@@ -82,8 +82,9 @@ p {
 
 .textfo{
 	font-family: 'STIX Two Math', serif;
-	font-size: 5em;
-	font-weight: 600;
+	/* font-size: 2em; */
+	font-size: 2em;
+	/* font-weight: 600; */
     color: #ffffff;
 	/* margin-top: 50px; */
 	margin-bottom: 0;
@@ -91,6 +92,7 @@ p {
 	line-height: 1.7em;
 	
 }
+
 
 h1 {
     font-family: 'Qwigley', Helvetica, Sans-serif;	   

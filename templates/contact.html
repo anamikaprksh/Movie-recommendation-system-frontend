@@ -80,7 +80,17 @@
 
             </form>
             
-              <div class="textfo"> {{prediction_text}}</div>
+              <!-- <div class="textfo"> {{prediction_text}}</div> -->
+              <!-- <h1 class="textfo"> {{prediction_text}}</h1> -->
+              <div id="tru">
+                <h1 style="font-family: 'STIX Two Math', serif;font-size: 1.9em;">{{prediction_text.split("[")[2].split("]")[0]}}</h1>
+            </div>
+            <div id="n"></div>
+              <!-- <script>
+                var abb=new String(prediction_text.split("[")[2].split("]")[0])
+                document.write(abb)
+                console.log(prediction_text.split("[")[2].split("]")[0])
+              </script> -->
             </div>
            <hr>
           </div>
@@ -110,6 +120,21 @@
     <script src="../static/js/bootstrap.min.js"></script>
 
     <script src="../static/js/app.js"></script>
+
+    <script>
+      var name="{{prediction_text}}";
+      console.log("sdvsdvsa")
+      var x=document.getElementById("tru");
+      var y=document.getElementById("n");
+      if(typeof prediction_text === "undefined"){
+          x.style.display="none";
+          y.style.display="block";
+      }
+      else{
+          x.style.display="block";
+          y.style.display="none";
+      }
+  </script>
   
   </body>
 </html>
